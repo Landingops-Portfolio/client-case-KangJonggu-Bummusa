@@ -1,0 +1,263 @@
+@charset "UTF-8";
+
+.sub-title-wrap {
+    position: relative; width: 100%; height: 380px; background: url(/images/subtitle-bg.png) no-repeat center;
+}
+.sub-title-wrap .sub-tit {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.sub-title-wrap .sub-tit h2 {font-family: 'GmarketSans'; font-weight: 500; font-size: 30px; color: #fff; text-align: center;}
+.sub-title-wrap .sub-tit p::before {content: ""; display: block; width: 20px; height: 20px; background: url(/images/home.png); position: absolute; left: -20px; top: 48px;}
+
+.sub-title-wrap .sub-tit p {font-size: 14px; color: #fff; margin-top: 20px;}
+
+.submenu-wrap {border: 1px solid #E9E9E9; border-top: 0;}
+.submenu .sub-depth-1 {display: flex; justify-content: center; margin-bottom: 0 !important;}
+
+.submenu .sub-depth-1 li {
+    line-height: 55px; 
+    width: calc(100%/3); 
+    text-align: center;
+    border-left: 1px solid #E9E9E9;
+}
+
+.submenu .sub-depth-1 li a {font-weight: 500;}
+.submenu .sub-depth-1 li.on {background-color: #D0C09E;}
+.submenu .sub-depth-1 li.on a {color: #fff; font-weight: 700;}
+.submenu .sub-depth-1 li:last-child {border-right: 1px solid #E9E9E9;}
+
+.submenu .sub-depth-1 li a {
+    font-family: 'GmarketSans'; font-size: 18px;
+}
+
+.sub-content {text-align: center; padding: 100px 0 0 0;}
+.sub-content .sub-content-tit h1 {font-family: 'GmarketSans'; font-size: 32px; font-weight: 700;}
+.sub-content .sub-content-tit h2 {font-family: 'Pretendard'; font-size: 20px; font-weight: 700; padding: 50px 0;}
+.sub-content .sub-content-txt {margin-top: 80px; padding-bottom: 100px; display: flex; gap: 35px; justify-content: center; align-items: center;}
+
+.sub-content .sub-content-txt .img {width: 70%;}
+
+.sub-content .sub-content-txt .txt {text-align: left;}
+.sub-content .sub-content-txt .txt p {font-family: 'Pretendard'; font-size: 18px; font-weight: 400; margin-bottom: 30px; line-height: 28px;}
+.sub-content .sub-content-txt .txt em {font-weight: 600;}
+
+/* 직원소개 */
+.employees {background-color: #f4f4f4; padding-bottom: 100px;}
+.employees-layout {max-width: 920px; margin: 0 auto;}
+.employees-content {box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;; background-color: #fff; border-radius: 20px; margin-top: 40px;}
+.employees-content02 .employees-content-inner .employees-info:not(:last-child) {border-bottom: 1px dashed #D1D1D1;}
+.employees-content02 .employees-content-inner .employees-info {padding: 50px 0 60px 0;}
+.employees-content-inner {padding: 40px 25px; overflow: hidden;}
+.employees-content02 .employees-content-inner .employees-info:last-child {padding-bottom: 20px;}
+
+.employees-tit p {display: inline-block; background-color: #D0C09E; border-radius: 30px; padding: 20px 25px; color: #fff; font-size: 20px; font-weight: 700; margin-top: 20px;}
+.employees-tit p em {font-weight: 400; font-size: 18px;}
+
+.employees-info {display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 30px;}
+.employees-info-reverse {flex-direction: row-reverse;}
+.employees-info .left p {font-family: 'Pretendard'; font-size: 16px; font-weight: 400; line-height: 28px; text-align: left;}
+.employees-info .left p em {font-weight: bold;}
+.employees-info .right {display: flex; gap: 20px; flex-direction: column; gap: 15px;}
+.employees-info .right .txt p {font-family: 'Pretendard'; font-size: 16px; font-weight: 400;line-height: 28px; text-align: center;}
+.employees-info .right .txt p em {font-family: 'Gmarketsans', 'san-serif'; font-size: 24px; font-weight: bold;}
+
+@media (min-width: 780px) {
+  .employees-content {margin-top: 60px;}
+  .employees-content02 .employees-content-inner .employees-info {padding: 40px 0 60px 0;}
+  .employees-content02 .employees-content-inner .employees-info:last-child {padding-bottom: 60px;}
+  .employees-content-inner {padding: 30px 80px; overflow: hidden;}
+  .employees-info {gap: 80px;}
+  .employees-info .left p {font-family: 'Pretendard'; font-size: 18px; font-weight: 400; line-height: 28px; text-align: left;}
+}
+
+
+/* 주요업무 */
+.main-business-wrap {margin-bottom: 120px;}
+.main-business {display: flex; flex-wrap: wrap; justify-content: center;}
+.main-business .main-business-item {width: 490px; display: flex; background-color: #f4f4f4; align-items: center; margin: 2%; padding: 25px;}
+.main-business .main-business-item p {font-family: 'Pretendard'; font-size: 18px; font-weight: 500; line-height: 1.6;}
+
+.main-business .main-business-item .business-icon {margin-right: 80px;}
+.main-business .main-business-item .business-icon01 {border-radius: 50px; width: 98px; height: 98px; background: url(/images/main-business01.png) no-repeat center #fff;}
+.main-business .main-business-item .business-icon02 {border-radius: 50px; width: 98px; height: 98px; background: url(/images/main-business02.png) no-repeat center #fff;}
+.main-business .main-business-item .business-icon03 {border-radius: 50px; width: 98px; height: 98px; background: url(/images/main-business03.png) no-repeat center #fff;}
+.main-business .main-business-item .business-icon04 {border-radius: 50px; width: 98px; height: 98px; background: url(/images/main-business04.png) no-repeat center #fff;}
+.main-business .main-business-item .business-icon05 {border-radius: 50px; width: 98px; height: 98px; background: url(/images/main-business05.png) no-repeat center #fff;}
+.main-business .main-business-item .business-icon06 {border-radius: 50px; width: 98px; height: 98px; background: url(/images/main-business06.png) no-repeat center #fff;}
+.main-business .main-business-item .business-icon07 {border-radius: 50px; width: 98px; height: 98px; background: url(/images/main-business07.png) no-repeat center #fff;}
+
+
+/* 오시는길 */
+.sub-content .location-wrap {max-width: 1060px; margin: 0 auto;}
+.root_daum_roughmap {width:100% !important;}
+.contact-wrap {margin: 40px 0 140px 0;}
+.contact-wrap .contact-info {display: flex; max-width: 1060px; margin: 0 auto; flex-wrap: wrap; text-align: left; gap: 20px; padding-left: 20px;}
+.contact-wrap .contact-info li {width: 50%; font-family: 'Pretendard'; font-size: 16px; font-weight: 400; padding-left: 30px;}
+.contact-wrap .contact-info li span {font-weight: 600; padding-right: 20px;}
+.contact-wrap .contact-info .address, .contact-wrap .contact-info .tel, .contact-wrap .contact-info .phone {position: relative;}
+.contact-wrap .contact-info .address:before {
+    content: ""; display: block; position: absolute; width: 25px; height: 24px; background: url(/images/location.png) no-repeat; top: -5px; left: -8px;
+}
+.contact-wrap .contact-info .tel:before {
+    content: ""; display: block; position: absolute; width: 25px; height: 24px; background: url(/images/tel.png) no-repeat; top: -3px; left: -8px;
+}
+.contact-wrap .contact-info .phone:before {
+    content: ""; display: block; position: absolute; width: 25px; height: 24px; background: url(/images/phone.png) no-repeat; top: -3px; left: -8px;
+}
+
+
+.sub2-content-wrap {padding-top: 90px; padding-bottom: 140px; background-color: #F4F4F4;}
+.sub3-content-wrap {padding-top: 145px; padding-bottom: 140px; background-color: #F4F4F4;}
+.sub-content-title {margin-bottom: 80px; text-align: center;}
+.sub-content-title h2 {font-family: 'GmarketSans'; font-size: 40px; font-weight: 700;}
+
+.sub2-content {box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;; background-color: #fff; border-radius: 20px;}
+.sub-content-top {border-radius: 20px 20px 0 0; background-color: #3F83F2; position: relative;}
+.sub-content-top:before {content: ""; display: block; width: 156px; height: 143px; background: url('/images/sub-content-top.png') no-repeat center; background-size: cover; position: absolute; right: 44px; top: -72px;}
+.sub-content-top h3 {font-family: 'Pretendard'; font-size: 30px; font-weight: 600; color: #fff; padding: 32px 0 31px 70px;}
+.sub-content-bottom-inner {padding: 60px 110px 60px 100px; overflow: hidden;}
+
+.sub-content-list .info-box {margin-bottom: 28px;}
+.sub-content-list .info-box h4 {font-family: 'Pretendard'; font-size: 28px; font-weight: 700; position: relative; margin-bottom: 32px;}
+.sub-content-list .info-box h4:before {content: ""; display: block; width: 6px; height: 28px; background-color: #3F83F2; position: absolute; left: -15px;}
+.sub-content-list .info-box .txt-box {padding-bottom: 32px; position: relative; padding-left: 16px;}
+.sub-content-list .info-box .line {border-bottom: 1px solid #D9D9D9;}
+.sub-content-list .info-box .txt-box:after {content: ""; display: block; position: absolute; bottom: 0; width: 1140px; height: 1; background-color: #D9D9D9;}
+.sub-content-list .info-box .txt-box .txt-list p {font-family: 'Pretendard'; font-size: 17px; font-weight: 400; line-height: 26px;}
+.sub-content-list .info-box .txt-box .txt-list .txt-tit {display: flex; align-items: center;}
+.sub-content-list .info-box .txt-box .txt-list .txt-txt {display: flex; align-items: top; font-size: 16px;}
+.sub-content-list .info-box .txt-box .txt-list h5 {font-family: 'Pretendard'; font-size: 24px; font-weight: 600; color: #3F83F2; margin-bottom: 20px; margin-top: 40px;}
+.sub-content-list .info-box .txt-box .txt-list h5 span, 
+.sub-content-list .info-box .txt-box .txt-list P span {font-family: 'Pretendard'; font-size: 18px; font-weight: 800; color: #3F83F2; margin-right: 9px;}
+
+.sub-content-list .info-box .txt-box .subtxt-list-flex ul {display: flex; width: 100%; flex-wrap: wrap;}
+.sub-content-list .info-box .txt-box .subtxt-list-flex ul li {width: 50%; font-family: 'Pretendard'; font-size: 17px; font-weight: 400;}
+.sub-content-list .info-box .txt-box .subtxt-list-flex ul li:nth-child(1),
+.sub-content-list .info-box .txt-box .subtxt-list-flex ul li:nth-child(2),
+.sub-content-list .info-box .txt-box .subtxt-list-flex ul li:nth-child(3) {padding-bottom: 18px;}
+.sub-content-list .info-box .txt-box .subtxt-list-flex ul li span {font-family: 'Pretendard'; font-size: 17px; font-weight: 500; color: #96B1FF; padding-right: 2px;}
+
+.sub-content-list .info-box .sub4-1-li-flex ul {display: flex;}
+.sub-content-list .info-box .sub4-2-li-flex ul {flex-direction: column;}
+.sub-content-list .info-box .sub4-1-li-flex ul li {width: 33.3333%; font-family: 'Pretendard'; font-size: 17px; font-weight: 400;}
+.sub-content-list .info-box .sub4-2-li-flex ul li:nth-child(1) {width: 100%; padding-bottom: 10px;}
+.sub-content-list .info-box .sub4-1-li-flex ul li span {font-family: 'Pretendard'; font-size: 17px; font-weight: 500; color: #96B1FF; }
+
+.document-box {display: flex; width: 100%; flex-wrap: wrap;}
+.document-box .document-list {width: 46%; border: 1px solid #3F83F2; border-radius: 20px; overflow: hidden; margin: 2%;}
+.document-box .document-list .document-list-tit {width: 100%; background-color: #3F83F2;}
+
+.document-box .document-list p {width: 100%; line-height: 55px; font-family: 'Pretendard'; font-size: 20px; font-weight: 400; color: #fff; padding-left: 30px;}
+.document-box .document-list ul {padding: 30px 30px 30px 35px;}
+
+.document-box .document-list ul li {line-height: 28px; font-family: 'Pretendard'; font-size: 17px; font-weight: 500; text-indent: -14px; padding-left: 14px;}
+.document-box .document-list ul li span {font-family: 'Pretendard'; font-size: 17px; font-weight: 500; color: #96B1FF; padding-right: 2px;}
+
+.document-box .document-list:last-child {border: 1px solid #EE6E84;}
+.document-box .document-list:last-child .document-list-tit {background-color: #EE6E84;}
+.document-box .document-list:last-child ul li span {color: #EE6E84;}
+
+.document-box .sub4-1-document-list {border: 1px solid #3F83F2 !important;}
+.document-box .sub4-1-document-list .document-list-tit {background-color: #3F83F2 !important;}
+.document-box .sub4-1-document-list ul li span {color: #3F83F2 !important;}
+
+/* 회생및파산-파산면책*/
+.sub2-2-txt-box {margin-left: 25px;}
+.sub2-2-txt-box p {margin-bottom: 10px; color: #D80202; }
+.sub2-2-txt-box .txt-list ul {padding-left: 0;}
+.sub2-2-txt-box .txt-list .sub-txt-tit {margin-bottom: 20px;}
+.sub2-2-txt-box .txt-list ul li {text-indent: 0;}
+
+
+/* 법인등기 탭메뉴 */
+.tab-menu {margin-bottom: 50px;}
+.tab-menu .nav-tabs {position: relative; display: flex; max-width: 840px; margin: 0 auto; background-color: #fff;}
+.tab-menu .nav-tabs li {line-height: 55px; width: 25%; text-align: center;}
+.tab-menu .nav-tabs li a {font-family: 'Pretendard'; font-size: 18px; font-weight: 500;}
+
+.tab-menu .nav-tabs li.active {background-color: #3F83F2;}
+.tab-menu .nav-tabs li.active a{color: #fff;}
+
+.sub-txt-tit {font-family: 'Pretendard'; font-size: 20px; font-weight: 600; color: #3F83F2; margin-bottom: 16px; text-indent: -25px; line-height: 1.3;}
+.sub-txt-list {padding-left: 40px;}
+
+.sub5-content .sub-txt-list {padding-left: 10px;}
+.sub-txt-list li {line-height: 24px; font-family: 'Pretendard'; font-size: 17px; font-weight: 400; list-style-position: inside; text-indent: -14px;}
+.txt-list ul {padding-left: 40px;}
+.txt-list ul li {font-family: 'Pretendard'; font-size: 17px; font-weight: 400; line-height: 24px; text-indent: -14px;}
+.margin-bottom {margin-bottom: 30px;}
+.margin-bottom li {margin-bottom: 10px;}
+
+/* 상속/한정승인 */
+.sub4-document-box .document-list {width: 100%; margin: 0;}
+.sub4-2-li-width ul li {font-family: 'Pretendard'; font-size:17px; font-weight: 400; line-height: 28px;}
+.sub4-2-li-width ul li span {color: #96B1FF;}
+.sub4-2-li-width ul li:last-child {margin-top: 10px; padding-left: 20px;}
+.document-box .document-list ul li ul {padding: 10px 0 25px 45px;}
+
+
+
+/* 상속/한정승인-준비서류 표 */
+.tg  {border-collapse:collapse; border-color:#d4d4d4; border-spacing:0;}
+.tg td{background-color:#fff; border: 1px solid #d4d4d4; font-family: 'Pretendard'; font-size:16px;overflow:hidden;padding:20px 25px;word-break:normal; line-height: 24px;}
+.tg th{background-color:#F4F4F4; border: 1px solid #d4d4d4; font-family: 'Pretendard'; font-size:16px;font-weight:normal;overflow:hidden;padding:20px 25px;word-break:normal; font-weight: 700;}
+.tg .tg-9wq8{text-align:center;vertical-align:middle; font-weight: 700;}
+.tg .tg-0pky{text-align:left;vertical-align:top}
+.tg .tg-d459{text-align:left; vertical-align:middle}
+
+.sub4-3-document-table ul {width: 80%; margin: 0 auto; padding-top: 30px; font-family: 'Pretendard'; font-size:16px; line-height: 24px;}
+.sub4-3-document-table ul li {padding-left: 25px;}
+.table-manual {margin-bottom: 20px; font-family: 'Pretendard'; font-size: 16px; font-weight: 400; display: none;}
+
+/* 성년후견심판청구 */
+.sub5-1-tit p {text-align: center;}
+.sub-title-wrap .sub5-1-tit p::before {left: -20px}
+.sub5-tab-menu .nav-tabs {max-width: 205px;}
+.sub5-tab-menu .nav-tabs .nav-item {width: 100%;}
+
+@media (max-width: 1280px) {
+    .sub2-content {width: 80%; margin: 0 auto;}
+    .sub-content-top h3 {padding: 40px;}
+    .sub-content-bottom-inner {padding: 30px;}
+    .document-box .document-list {width: 100%;}
+    .contact-wrap .contact-info .address,
+    .contact-wrap .contact-info .phone {width: 100%; line-height: 30px;}
+}
+@media (max-width: 1080px) {
+    .sub-content-list .info-box .txt-box ul li {width: 100%;}
+    .sub-content-list .info-box .txt-box ul li:nth-child(3) {padding-bottom: 18px;}
+    .sub-content-list .info-box .txt-box .subtxt-list-flex ul li {width: 100%;}
+    .sub-content-list .info-box .txt-box .subtxt-list-flex ul li:nth-child(4) {padding-bottom: 18px;}    
+}
+@media (max-width: 1000px) {
+    .sub4-3-document-table {width: 100%; overflow-x: auto; white-space: nowrap;}
+    table {width: auto;}
+    .table-manual {display: block;}
+}
+@media (max-width: 960px) {
+    .main-business-item {width: 100%;}
+    .contact-wrap .contact-info {padding-left: 0px;}
+    .contact-wrap .contact-info .address:before,
+    .contact-wrap .contact-info .tel:before,
+    .contact-wrap .contact-info .phone:before {content: none;}
+    .sub-content-list .info-box .sub4-1-li-flex ul {flex-wrap: wrap;}
+    .sub-content-list .info-box .sub4-1-li-flex ul li {margin-bottom: 10px;}
+}
+@media (max-width: 800px) {
+    .sub-content .sub-content-txt {flex-direction: column;}
+}
+@media (max-width: 768px) {
+
+    .sub-content .sub-content-txt .txt {padding: 0 15px;}
+    .sub2-content {width: 90%; margin: 0 auto;}
+    .sub-content-top:before {content: none;}
+    .tab-menu .nav-tabs {flex-wrap: wrap;}
+    .tab-menu .nav-tabs li {width: 50%;}
+}
+@media (max-width: 500px) {
+    .sub-content-list .info-box .txt-box {
+        padding-left: 0px;
+    }
+    .document-box .document-list ul {
+        padding: 30px 10px 30px 20px;
+    }
+    .sub-txt-list {padding-left: 30px;}
+}

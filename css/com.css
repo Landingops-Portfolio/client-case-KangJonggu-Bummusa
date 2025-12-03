@@ -1,0 +1,8 @@
+/* COMMON CSS - LAYOUT CSS */
+
+/* all layout */
+/*body {min-width:800px; }*/
+.wrap {width:100%;}
+
+/* content layout */
+#content {width:100%;overflow:hidden; display:block; padding:30px 0;}
